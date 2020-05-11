@@ -19,80 +19,77 @@
     font-size: 14px;
     text-align: center;
     letter-spacing: 0.01em;
-    .navbar-toggler-icon{
-      width: 30px;
-      height: 16px;
+
+
+    .visuallyHidden {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      height: 1px; width: 1px;
+      margin: -1px; padding: 0; border: 0;
+      &:checked + .toggler-icon1 {
+        transform: rotate(45deg) translate(0px, 8px);
+      }
+      &:checked  +.toggler-icon2 {
+          visibility: hidden;
+      }
+
+      &:checked +.toggler-icon3 {
+          transform: rotate(-45deg) translate(2px, -10px);
+          width: 31px;
+      }
+
+      &:checked +.toggler-icon4 {
+          visibility: hidden;
+      }
+
+      &:checked +.toggler-icon5 {
+          visibility: hidden;
+      }
+
+    }
+    .hamburger{
       position: relative;
       background-image: none;
       margin-right: 15px;
-      transition: all .2s;
-      outline: none;
-
-      span {
-        border: 1px solid white;
-        position: absolute;
-      }
-      .toggler-icon{
-        &:nth-of-type(1){
-          top: 0;
-          left: 0;
-          width: 30px;
-        }
-        &:nth-of-type(2){
-          top: 50%;
-          left: 0;
-          width: 22px;
-
-        }
-        &:nth-of-type(3){
-          bottom: 0;
-          left: 0;
-          width: 15px;
-
-        }
-        &:nth-of-type(4){
-          bottom: 2px;
-          right: 0;
-          width: 8px;
-
-          transform: rotate(90deg);
-        }
-        &:nth-of-type(5){
-          bottom: 2px;
-          right: 0;
-          width: 8px;
-        }
-      }
-      &:hover,
-      &:focus {
-        .toggler-icon {
-          &:nth-of-type(1) {
-            transform: rotate(45deg) translate(0px, 8px);
-          }
-
-          &:nth-of-type(2) {
-            visibility: hidden;
-          }
-
-          &:nth-of-type(3) {
-            transform: rotate(-45deg) translate(2px, -10px);
-            width: 31px;
-          }
-
-          &:nth-of-type(4) {
-            visibility: hidden;
-          }
-
-          &:nth-of-type(5) {
-            visibility: hidden;
-          }
-        }
-      }
+      transition: all 0.4s ease-in-out;
+      width: 30px;
+      height: 16px;
     }
+    span {
+      border: 1px solid white;
+      position: absolute;
+    }
+    .toggler-icon1{
+        top: 0;
+        left: 0;
+        width: 30px;
+    }
+    .toggler-icon2{
+        top: 50%;
+        left: 0;
+        width: 22px;
+    }
+    .toggler-icon3{
+        bottom: 0;
+        left: 0;
+        width: 15px;
+    }
+    .toggler-icon4{
+        bottom: 2px;
+        right: 0;
+        width: 8px;
 
+        transform: rotate(90deg);
+    }
+    .toggler-icon5{
+        bottom: 2px;
+        right: 0;
+        width: 8px;
+    }
   }
   @include max-screen(768px){
-    padding: 10px 0;
+    padding: 20px 0;
     &-nav {
       width: 100%;
       a.nav-link{
@@ -101,5 +98,8 @@
       }
     }
 
+  }
+  @include max-screen(425px){
+    padding: 20px 15px;
   }
 }
