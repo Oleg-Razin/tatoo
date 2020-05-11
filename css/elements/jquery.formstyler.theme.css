@@ -6,7 +6,7 @@
 .jq-selectbox__select {
 	background-color: transparent;
 	border: none;
-	padding: 6px 12px;
+	padding: 6px 20px;
 	border-radius: 0;
 	border-bottom: 1px solid #89898b;
 	line-height: 18px;

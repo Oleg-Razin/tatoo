@@ -18,22 +18,26 @@
     letter-spacing: 0.01em;
     overflow: hidden;
     padding: 0 20px;
-    ::-webkit-input-placeholder {
+    &::-webkit-input-placeholder {
+      font-family: $raleway;
       color: #36353D;
       letter-spacing: 0.01em;
     }
 
-    ::-moz-placeholder {
+    &::-moz-placeholder {
+      font-family: $raleway;
       color: #36353D;
       letter-spacing: 0.01em;
     }
 
-    :-moz-placeholder {
+    &:-moz-placeholder {
+      font-family: $raleway;
       color: #36353D;
       letter-spacing: 0.01em;
     }
 
-    :-ms-input-placeholder {
+    &:-ms-input-placeholder {
+      font-family: $raleway;
       color: #36353D;
       letter-spacing: 0.01em;
     }
@@ -85,7 +89,8 @@
   .btn-primary{
     margin-left: 50%;
     transform: translateX(-50%);
-    padding: 0 15px;
+    @include max-screen(375px){
+      padding: 0 15px;
+    }
   }
-
 }

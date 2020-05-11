@@ -127,6 +127,7 @@ body {
     background-image: url("../images/imagemain_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
     top: 0;
@@ -153,12 +154,15 @@ body {
   @media screen and (max-width: 1024px) {
     #main:before {
       opacity: 0.6;
-      border-top: 100vw solid #1D1C21; } }
+      border-top: 100vw solid #1D1C21;
+      border-right: 300px solid transparent; } }
   @media screen and (max-width: 425px) {
     #main .social {
       right: 15px; }
     #main .logo {
-      margin-top: 15px; } }
+      margin-top: 15px; }
+    #main:before {
+      border-right: 150px solid transparent; } }
 
 .artist {
   padding: 80px 0; }
@@ -511,16 +515,20 @@ body {
     letter-spacing: 0.01em;
     overflow: hidden;
     padding: 0 20px; }
-    .contact__form input ::-webkit-input-placeholder, .contact__form select ::-webkit-input-placeholder, .contact__form textarea ::-webkit-input-placeholder {
+    .contact__form input::-webkit-input-placeholder, .contact__form select::-webkit-input-placeholder, .contact__form textarea::-webkit-input-placeholder {
+      font-family: "Raleway", sans-serif;
       color: #36353D;
       letter-spacing: 0.01em; }
-    .contact__form input ::-moz-placeholder, .contact__form select ::-moz-placeholder, .contact__form textarea ::-moz-placeholder {
+    .contact__form input::-moz-placeholder, .contact__form select::-moz-placeholder, .contact__form textarea::-moz-placeholder {
+      font-family: "Raleway", sans-serif;
       color: #36353D;
       letter-spacing: 0.01em; }
-    .contact__form input :-moz-placeholder, .contact__form select :-moz-placeholder, .contact__form textarea :-moz-placeholder {
+    .contact__form input:-moz-placeholder, .contact__form select:-moz-placeholder, .contact__form textarea:-moz-placeholder {
+      font-family: "Raleway", sans-serif;
       color: #36353D;
       letter-spacing: 0.01em; }
-    .contact__form input :-ms-input-placeholder, .contact__form select :-ms-input-placeholder, .contact__form textarea :-ms-input-placeholder {
+    .contact__form input:-ms-input-placeholder, .contact__form select:-ms-input-placeholder, .contact__form textarea:-ms-input-placeholder {
+      font-family: "Raleway", sans-serif;
       color: #36353D;
       letter-spacing: 0.01em; }
     .contact__form input:hover, .contact__form select:hover, .contact__form textarea:hover {
@@ -556,8 +564,10 @@ body {
       transition: 0.2s; }
   .contact__form .btn-primary {
     margin-left: 50%;
-    transform: translateX(-50%);
-    padding: 0 15px; }
+    transform: translateX(-50%); }
+    @media screen and (max-width: 375px) {
+      .contact__form .btn-primary {
+        padding: 0 15px; } }
 
 .g-map {
   overflow: hidden;

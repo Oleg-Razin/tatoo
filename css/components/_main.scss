@@ -14,6 +14,7 @@
     background-image: url("../images/imagemain_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
     top: 0;
@@ -49,6 +50,7 @@
     &:before {
       opacity: 0.6;
       border-top: 100vw solid $darkGrey;
+      border-right: 300px solid transparent;
     }
   }
   @include max-screen(425px){
@@ -57,6 +59,9 @@
     }
     .logo{
       margin-top: 15px  ;
+    }
+    &:before {
+      border-right: 150px solid transparent;
     }
   }
 }
