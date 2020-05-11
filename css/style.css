@@ -108,10 +108,10 @@ img {
 body {
   background-color: #1D1C21; }
 
-#main {
+.main {
   position: relative;
   overflow: hidden; }
-  #main:before {
+  .main:before {
     content: "";
     display: block;
     position: absolute;
@@ -120,7 +120,7 @@ body {
     border-top: 50vw solid #1D1C21;
     border-right: 400px solid transparent;
     background: linear-gradient(269.85deg, rgba(33, 8, 8, 0.9) 21.28%, rgba(58, 58, 58, 0.27) 96.11%); }
-  #main:after {
+  .main:after {
     content: "";
     display: block;
     position: absolute;
@@ -133,35 +133,35 @@ body {
     top: 0;
     opacity: 0.3;
     z-index: -1; }
-  #main .main__inner {
+  .main .main__inner {
     padding: 58px 0 65px;
     display: flex;
     flex-direction: column;
     align-items: center; }
-  #main .logo {
+  .main .logo {
     max-width: 445px;
     margin: auto; }
-  #main .main__title {
+  .main .main__title {
     margin-bottom: 58px; }
-  #main .logo_reward {
+  .main .logo_reward {
     top: 0;
     left: 0; }
-  #main .social {
+  .main .social {
     top: 0;
     right: 0; }
-    #main .social .svg__ico {
+    .main .social .svg__ico {
       margin-top: 25px; }
   @media screen and (max-width: 1024px) {
-    #main:before {
+    .main:before {
       opacity: 0.6;
       border-top: 100vw solid #1D1C21;
       border-right: 300px solid transparent; } }
   @media screen and (max-width: 425px) {
-    #main .social {
+    .main .social {
       right: 15px; }
-    #main .logo {
+    .main .logo {
       margin-top: 15px; }
-    #main:before {
+    .main:before {
       border-right: 150px solid transparent; } }
 
 .artist {

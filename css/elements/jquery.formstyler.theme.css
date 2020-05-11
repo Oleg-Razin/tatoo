@@ -29,9 +29,12 @@
 .jq-selectbox__select-text {
 	display: block;
 	width: 100%;
+	color: #36353D;
+	font-family: 'Raleway', sans-serif;
 }
 .jq-selectbox .placeholder {
 	color: #36353D;
+	font-family: 'Raleway', sans-serif;
 }
 .jq-selectbox__trigger {
 	position: absolute;
