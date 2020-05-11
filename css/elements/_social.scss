@@ -1,0 +1,13 @@
+.social{
+  .svg__ico{
+    width: 24px;
+    height: 24px;
+    stroke-miterlimit: 10;
+    stroke: $ligthterGrey;
+    fill: transparent;
+    transition: 0.2s;
+    &:hover{
+      stroke: $red;
+    }
+  }
+}

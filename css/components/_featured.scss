@@ -1,0 +1,44 @@
+.featured{
+  padding: 80px 0 170px;
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    .section__title, .btn-secondary{
+      line-height: 1;
+    }
+  }
+  @include max-screen(960px){
+    .section__subtitle{
+      font-size: 18px;
+    }
+  }
+  @include max-screen(768px){
+    padding: 40px 0;
+  }
+  @include max-screen(736px){
+    &__title{
+      flex-direction: column;
+      align-items: center;
+    }
+    .section__title{
+      margin-bottom: 10px;
+    }
+    .btn-secondary{
+      align-self: flex-end;
+    }
+    .section__subtitle{
+      align-self: center;
+      margin-bottom: 15px;
+    }
+    img{
+      margin-bottom: 15px;
+    }
+  }
+  @include max-screen(375px){
+    .section__title{
+      font-size: 30px;
+    }
+  }
+}

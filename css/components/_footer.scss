@@ -1,0 +1,37 @@
+.footer {
+  .navbar {
+    padding: 20px 0;
+    border-bottom: 1px solid #89898B;
+    border-top: 1px solid #89898B
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .social {
+    display: flex;
+    justify-content: flex-start;
+
+    .svg__ico {
+      margin-right: 25px;
+    }
+  }
+  @include max-screen(768px){
+    .navbar{
+      position: relative;
+      border: none;
+      &:after{
+        @include pseudo-apsol();
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-image: url("../images/footer__bg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}

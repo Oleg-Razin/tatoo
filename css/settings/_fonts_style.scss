@@ -1,0 +1,66 @@
+
+%main_font{
+  font-family: $playfair;
+  color: $grey;
+  font-size: 61px;
+  font-weight: 900;
+}
+%secondary_font{
+  font-family: $raleway;
+  color: $ligthterGrey;
+  font-size: 15px;
+}
+
+.navbar-light .navbar-nav a.nav-link, .btn, label{
+  @extend %secondary_font;
+}
+.section__text {
+  @extend %secondary_font;
+  color: $darkGrey;
+}
+.main__title{
+  @extend %main_font;
+  font-size: 18px;
+  line-height: 24px;
+  color: $white;
+}
+.section__title{
+  @extend %main_font;
+  line-height: 81px;
+  @include max-screen(768px){
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+.section__subtitle{
+  @extend %main_font;
+  font-size: 24px;
+  line-height: 32px;
+  color: $ligthterGrey;
+  &-info{
+    color: $darkGrey;
+    line-height: 48px;
+  }
+
+}
+.contacts__title{
+  @extend %main_font;
+  font-size: 14px;
+  line-height: 19px;
+  color: $darkGrey;
+}
+.contacts__sub-title{
+  @extend %secondary_font;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: $darkGrey;
+}
+.footer__text{
+  @extend %secondary_font;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: $grey;
+}
+

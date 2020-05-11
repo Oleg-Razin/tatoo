@@ -1,0 +1,37 @@
+.contact {
+  padding: 80px 0;
+
+  &__info{
+    background-color: #C4C4C4;
+  }
+  &__address{
+    padding: 30px 145px 30px 96px;
+    .contacts__sub-title{
+      margin-bottom: 10px;
+    }
+  }
+  .social{
+    display: flex;
+    justify-content: flex-start;
+    .svg__ico{
+      stroke: $darkGrey;
+      margin-right: 25px  ;
+      &:hover{
+        stroke: $red;
+      }
+    }
+  }
+  @include max-screen(1024px){
+    &__address {
+      padding: 20px 15px;
+    }
+  }
+  @include max-screen(768px){
+    padding-bottom: 40px;
+    .g-map{
+      padding-bottom:40%;
+      height:0;
+    }
+
+  }
+}

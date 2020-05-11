@@ -1,0 +1,36 @@
+.btn{
+  border: 2px solid $ligthtGrey;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  &:hover{
+    background-color: transparent;
+    border-color: inherit;
+    color: $red;
+  }
+  &.btn-primary{
+    line-height: 50px;
+    padding: 0 24px;
+    background-color: transparent;
+    transition: 0.2s;
+    &:hover{
+
+    }
+  }
+  &.btn-secondary{
+    border: none;
+    line-height: 18px;
+    border-bottom: 1px solid transparent;
+    i{
+      font-size: 12px;
+      margin-left: 5px;
+      color: $red;
+    }
+    &:hover {
+      border-color: $ligthtGrey;
+    }
+    &:hover i{
+      color: $ligthtGrey;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.services{
+  padding: 161px 0 149px;
+  background-image: url("../images/second_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &:before {
+    @include pseudo-apsol();
+    background-color: #D3D3D3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 1;
+    z-index: -1;
+  }
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__ico{
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    display: inline-block;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  .section__text{
+    margin-bottom: 5px;
+  }
+  .btn-secondary{
+    color: $red;
+    &:hover, &:hover i{
+      color: $darkGrey;
+      border-color: $red;
+    }
+  }
+  @include max-screen(768px){
+    padding: 20px 0;
+    &__item {
+      margin-bottom: 10px;
+    }
+
+  }
+  @include max-screen(375px){
+    .section__subtitle-info{
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
